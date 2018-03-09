@@ -1,0 +1,12 @@
+.page_number {page-break-after: always; display: none; text-align: center;}
+.page_number span {float: right;}
+.page_number_end {display: block; padding-bottom: 10px;}
+@media print {
+    body, h1, h2, h4, h6, blockquote, ul {margin: 4px auto; padding-top: 0px;}
+    table {margin-bottom: 0px;}
+    .print-btn {display: none;}
+    .print_hide {display: none;}
+    .page_number {page-break-after: always; display: block;}
+    .page_number_end {padding-bottom: 0px;}
+    .markdown-body h1:first-child {display: none;}
+}
